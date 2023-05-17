@@ -23,9 +23,6 @@ struct ContentView: View {
                 TextField(LocalizedStringKey.init("password"), text: $password)
                     .background(in: RoundedRectangle(cornerSize: CGSize(width: 200, height: 80)))
                     .frame(width: 250, height: 80)
-                TextField("repeat password", text: $password)
-                    .background(in: RoundedRectangle(cornerSize: CGSize(width: 200, height: 80)))
-                    .frame(width: 250, height: 80)
             }
             .padding()
         }.edgesIgnoringSafeArea(.all)
